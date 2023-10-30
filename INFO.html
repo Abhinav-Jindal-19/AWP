@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="S_icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="angular.min.js"></script>
+    <script src="appdata.js"></script>
+    <script src="dom.js"></script>
+</head>
+<body>
+    <header id="current_window">
+        <form onsubmit="check_info()">
+            <h1>Login</h1>
+            <br>
+            <div class="left_div">
+                <p>Enter Your Name : </p>
+                <p>Enter Your Password : </p>
+                <p>Enter Your Student Id : </p>
+                <p>Enter Your Roll No : </p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+            <div class="right_div">
+                <input required name="uname" type="text" id="uname">
+                <input required name="upass" type="password" id="upass">
+                <input required name="uid" type="text" id="uid">
+                <input required name="uroll" type="text" id="uroll">
+            </div>
+        </form>
+    </header>
+</body>
+</html>

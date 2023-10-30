@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="icon" href="S_icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="angular.min.js"></script>
+    <script src="dom.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl" class="main">
+    <div class="intro">
+        <h1>Welcome Student</h1>
+        <br><br>
+        <a ng-repeat="x in options" ng-click="outputsite($index)">{{x}}</a>
+    </div>
+    <iframe src="HOME.html" frameborder="0" style="display: {{homeframe}};"></iframe>
+    <iframe src="INFO.html" frameborder="0" style="display: {{infoframe}};"></iframe>
+    <iframe src="classmates.html" frameborder="0" style="display: {{classframe}};"></iframe>
+    <iframe src="movies.html" frameborder="0" style="display: {{movieframe}};"></iframe>
+    <iframe src="contactus.html" frameborder="0" style="display: {{contactframe}};"></iframe>
+    <iframe height="10%" scrolling="yes" src="Registration.html" frameborder="0" style="display: {{regframe}};" ></iframe>
+    <div id="current_window">
+    </div>
+    <div class="footer">
+        This site is made by Abhinav Jindal and Ridhima Gautam
+    </div>
+    <script src="functions.js"></script>
+    <style>
+        .main{
+            background-image: url("{{image}}");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</body>
+</html> 
